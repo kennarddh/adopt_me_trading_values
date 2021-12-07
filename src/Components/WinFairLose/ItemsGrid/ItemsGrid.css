@@ -1,0 +1,8 @@
+.items-grid {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	background-color: #23b574;
+	padding: 5px;
+	border-radius: 25px;
+	width: fit-content;
+}

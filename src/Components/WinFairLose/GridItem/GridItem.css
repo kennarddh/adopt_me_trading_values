@@ -1,0 +1,74 @@
+.grid-item {
+	background-color: #cdffe6;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 25px;
+	margin: 5px;
+	width: 125px;
+	height: 125px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.grid-item .item-image {
+	width: 110px;
+	height: 110px;
+}
+.grid-item .item-extras {
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	text-align: right;
+	display: flex;
+	flex-direction: center;
+	justify-content: space-around;
+	align-items: center;
+	height: 20%;
+	width: 80%;
+	z-index: 5;
+}
+.grid-item .item-extras .item-extras-item.circle {
+	border-radius: 50%;
+}
+.grid-item .item-extras .item-extras-item.fly {
+	background-color: #2f99cd;
+}
+.grid-item .item-extras .item-extras-item.ride {
+	background-color: #ec2c79;
+}
+.grid-item .item-extras .item-extras-item.full-grown {
+	color: #000000;
+}
+.grid-item .item-extras .item-extras-item.neon {
+	background-color: #8dd102;
+}
+.grid-item .item-extras .item-extras-item.mega-neon {
+	background-color: #873fd5;
+}
+.grid-item .item-extras .item-extras-item p {
+	margin: 0;
+}
+.grid-item .item-extras .item-extras-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	width: 20px;
+	height: 20px;
+}
+
+.grid-item .add-button .symbol {
+	--b: 10px; /* the thickness */
+	width: 100%;
+	border-radius: 25px;
+	aspect-ratio: 1/1;
+	border: 25px solid #4bc652; /* the outer space */
+	background: conic-gradient(
+			from 90deg at var(--b) var(--b),
+			#4bc652 90deg,
+			#fff 0
+		)
+		calc(100% + var(--b) / 2) calc(100% + var(--b) / 2) /
+		calc(50% + var(--b)) calc(50% + var(--b));
+}
