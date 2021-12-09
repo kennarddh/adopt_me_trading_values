@@ -1,0 +1,13 @@
+.know-your-value-card {
+	padding: 10px;
+	background-color: #cdffe6;
+	border-radius: 25px;
+	width: fit-content;
+	width: 200px;
+	height: 200px;
+    cursor: pointer;
+}
+.know-your-value-card .item-image {
+	width: 200px;
+	height: 200px;
+}

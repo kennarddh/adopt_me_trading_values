@@ -1,4 +1,4 @@
-.win-fair-lose-grid {
+.know-your-value-grid {
 	display: grid;
 	grid-template-columns: 40% 20% 40%;
 	background-color: #cdffe6;
@@ -7,12 +7,60 @@
 	max-height: 60%;
 	max-width: 80%;
 	margin: 0 auto;
-	margin-top: 100px;
+	margin-top: 25px;
 }
-.win-fair-lose-grid .left,
-.win-fair-lose-grid .center,
-.win-fair-lose-grid .right {
+.know-your-value-grid .left,
+.know-your-value-grid .center,
+.know-your-value-grid .right {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.know-your-value-grid .center .button {
+	background-color: #4bc652;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	color: white;
+	width: 75px;
+	border-radius: 25px;
+}
+.know-your-value.game-over {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #cdffe6;
+	padding: 50px 10px;
+	border-radius: 25px;
+	height: 60%;
+	max-width: 80%;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.know-your-value.game-over .game-over-title {
+	margin: 0 0 10px 0;
+}
+.know-your-value.game-over .game-over-button {
+	background-color: #4bc652;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	color: white;
+	width: 150px;
+	border-radius: 25px;
+}
+.know-your-value-score {
+	background-color: #4bc652;
+	border: none;
+	padding: 10px;
+	margin: 0 auto;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	width: 200px;
+	border-radius: 25px;
+}
+.know-your-value-score h3 {
+	margin: 0;
 }

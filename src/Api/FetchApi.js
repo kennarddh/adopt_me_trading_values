@@ -1,13 +1,19 @@
-const RootUrl = 'http://127.0.0.1:33507/'
+const RootUrl = 'http://kennarddh.pythonanywhere.com/'
 
 const FetchData = endpoint => {
-	return fetch(`${RootUrl}${endpoint}`)
+	return fetch(`${RootUrl}${endpoint}`, {
+		method: 'GET',
+	})
 		.then(response => response.json())
 		.catch(err => alert(err))
 }
 
-export const GetAllItems = async () => {
-	const data = await FetchData('item/')
-
-    return data
+export const GetRaw = () => {
+	return FetchData('item/raw')
 }
+
+export const GetAllItems = () => {
+	return FetchData('item')
+}
+
+export default FetchData
